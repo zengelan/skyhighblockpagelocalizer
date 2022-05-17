@@ -32,6 +32,6 @@ Now this was changed to the following to work
 
 ## ToDo:
 * Need to find a way to host the json files
-
+* add the prefix path to the json files as a varibale into the custom html for the block page and then read it from the javscript
 
 Have a lot of fun

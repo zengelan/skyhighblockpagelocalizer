@@ -27,7 +27,7 @@ function matches(inStrOne, inStrTwo) {
 
 function getReplacement(orgString, replacementArray) {
     // check if we have a match in the array and return the replacement
-    var result=null;
+    var result = null;
     $.each(replacementArray, function (k, v) {
         console.debug("k:", k, "v", v);
         if (matches(orgString, k)) {
@@ -103,10 +103,10 @@ function changeValueInRow(inRowAttr, newValue) {
 }
 
 
-
 function loadLanguage(lang) {
     (function () {
-        var langfileUrl = "../" + lang + ".json";
+        var prefix = "https://cdn.jsdelivr.net/gh/zengelan/skyhighblockpagelocalizer/languages_1"
+        var langfileUrl = prefix + lang + ".json";
         console.debug("Loading language file ", langfileUrl)
         $.getJSON(langfileUrl)
             .done(function (data) {
