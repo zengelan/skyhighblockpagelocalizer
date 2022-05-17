@@ -105,7 +105,7 @@ function changeValueInRow(inRowAttr, newValue) {
 
 function loadLanguage(lang) {
     (function () {
-        var prefix = "https://cdn.jsdelivr.net/gh/zengelan/skyhighblockpagelocalizer/languages_1"
+        var prefix = "https://cdn.jsdelivr.net/gh/zengelan/skyhighblockpagelocalizer@latest/languages_1/"
         var langfileUrl = prefix + lang + ".json";
         console.debug("Loading language file ", langfileUrl)
         $.getJSON(langfileUrl)
@@ -168,7 +168,7 @@ function localize(inEvent) {
 function getLang() {
     var mylang = "en"; // set default language
     if (navigator.languages != undefined)
-        mylang = navigator.languages[2];
+        mylang = navigator.languages[0];
     else {
         try {
             mylang = navigator.language;
