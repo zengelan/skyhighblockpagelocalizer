@@ -1,4 +1,18 @@
-// the language for file de-de locale
-var langDeDe={
+{
+    "wellknown": {
+        "block-page-message": 0,
+        "title": "dies hier ist der titel"
+    },
+    "tablecolumns": {
+        "Reason": "Grund",
+        "URL": "sdsdfs",
+        "User IP": "dsadsadasd"
+    },
+    "reasons": {
+        "Page identified as having malware, spyware, or phishing": "Die seite hat malware, spyware oder fischsalat"
+    },
+    "titles": {
+        "The content you requested is blocked by your organization's security policy.":"Der Inhalt wurde von der firmenrichtlinie geblockt"
+    },
     "hallo":"duda"
 }
