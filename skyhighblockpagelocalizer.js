@@ -1,14 +1,17 @@
 // skyhighblockpagelocalizer
+// add it by adding a custom HTML to the web policy block command like this
+// <script src="../skyhighblockpagelocalizer.js" type="application/javascript"></script>
+// but needs to be encoded like this
+// so like:
+//
+// then commit web policy
 
-// load jquery library
+// load jquery library into the page
 var script = document.createElement('script');
-script.src = 'https://code.jquery.com/jquery-3.6.0.slim.min.js';
+script.src = 'https://code.jquery.com/jquery-3.6.0.min.js';
 script.type = 'text/javascript';
 document.getElementsByTagName('head')[0].appendChild(script);
 
-function helloWorld() {
-    console.info("Hello World");
-}
 
 function matches(inStrOne, inStrTwo) {
     // a pretty careful, sensible and case-sensitive substring match function
@@ -181,5 +184,3 @@ window.onload = (event) => {
     localize(event);
 };
 
-
-//
