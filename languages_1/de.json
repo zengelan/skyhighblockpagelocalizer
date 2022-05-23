@@ -3,7 +3,7 @@
         "block-page-message": 0,
         "title": "dies hier ist der titel",
         "logo": "<img id=\"logo\" #logo=\"\" src=\"https://tools.zengel.biz/iisstart.png\">",
-        "adminMessage": "<p>Sind Sie der Meinung dass diese Meldung falsch ist? Kontaktieren sie bitte den <a href=\"mailto:admin@beispiel.de\">Admin</a></p>",
+        "adminMessage": "<p>Sind Sie der Meinung daß diese Meldung falsch ist? Kontaktieren sie bitte den <a href=\"mailto:admin@beispiel.de\">Admin</a></p>",
         "more-details-trigger": "Bitte mehr Details anzeigen"
     },
     "tableColumnLabels": {
@@ -12,11 +12,11 @@
         "User IP": "Benutzer IP Adresse:"
     },
     "reasonReplacements": {
-        "Page identified as having malware, spyware, or phishing": "Die seite hat malware, spyware oder fischsalat",
+        "Page identified as having malware, spyware, or phishing": "Die Seite wurde als malware, spyware oder phishing identifiziert",
         "Page identified as blocked category": "Die Seite wird blockiert die sie ein hohes Risiko aufweist"
     },
     "blockPageMessagesReplacements": {
-        "The content you requested is blocked by your organization's security policy":"Der Inhalt wurde von der firmenrichtlinie geblockt"
+        "The content you requested is blocked by your organization's security policy":"Der Inhalt wurde von der Firmenrichtlinie geblockt"
     },
     "titleReplacements": {
         "Block If Virus Was Found":"Blockiert aufgrund eines Viruses",

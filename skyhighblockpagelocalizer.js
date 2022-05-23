@@ -102,10 +102,29 @@ function changeValueInRow(inRowAttr, newValue) {
     }
 }
 
+function getLangFileLocation(){
+    // the lang file location is "https://cdn.jsdelivr.net/gh/zengelan/skyhighblockpagelocalizer@v1.0.0/languages_example/"
+    // by default, the user of the script can specify a different location by adding a hidden <span> element with the link
+    // in the original page, the span needs to have the id="langFileLoc" and location is read from prefix attribute e.g.
+    // <span hidden prefix="https://cdn.jsdelivr.net/gh/EXAMPLE/blockpages@v1.0/langs"></span>
+    var loc = "https://cdn.jsdelivr.net/gh/zengelan/skyhighblockpagelocalizer@v1.0.0/languages_example/";
+    var locSpan = $("#langFilesLoc");
+    if (locSpan != undefined && locSpan){
+        // we found the span tag
+        var locAttr = locSpan.attr("data-loc");
+        if (locAttr != undefined && locAttr){
+            if (locAttr.startsWith("http")){
+                loc = locAttr;
+            } 
+        }
+    }
+    return loc;
+}
+
 
 function loadLanguage(lang) {
     (function () {
-        var prefix = "https://cdn.jsdelivr.net/gh/zengelan/skyhighblockpagelocalizer@latest/languages_1/"
+        var prefix = getLangFileLocation();
         var langfileUrl = prefix + lang + ".json";
         console.debug("Loading language file ", langfileUrl)
         $.getJSON(langfileUrl)
@@ -152,6 +171,10 @@ function loadLanguage(lang) {
                 });
 
 
+            })
+            .fail(function() {
+                console.warn("skyhighblockpagelocalizer: Could not find language file at '"+
+                    langfileUrl+"' not localizing the page");
             });
     })();
 }
