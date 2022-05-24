@@ -2,7 +2,7 @@
     "wellKnownSections": {
         "block-page-message": 0,
         "title": "dies hier ist der titel",
-        "logo": "<img id=\"logo\" #logo=\"\" src=\"https://tools.zengel.biz/iisstart.png\">",
+        "logo": "<img id=\"logo\" #logo=\"\" src=\"https://www.skyhighsecurity.com/sse/en-us/img/logos/skyhigh_logo_grad.svg\">",
         "adminMessage": "<p>Sind Sie der Meinung daß diese Meldung falsch ist? Kontaktieren sie bitte den <a href=\"mailto:admin@beispiel.de\">Admin</a></p>",
         "more-details-trigger": "Bitte mehr Details anzeigen"
     },

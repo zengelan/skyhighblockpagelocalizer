@@ -1,0 +1,25 @@
+{
+    "wellKnownSections": {
+        "block-page-message": 0,
+        "title": "dies hier ist der titel",
+        "logo": "<img id=\"logo\" #logo=\"\" src=\"https://www.skyhighsecurity.com/sse/en-us/img/logos/skyhigh_logo_grad.svg\">",
+        "adminMessage": "<p>Pensez-vous que ce message est erroné? Veuillez contacter l' <a href=\"mailto:admin@beispiel.de\">admin</a></p>",
+        "more-details-trigger": "Veuillez afficher plus de détails"
+    },
+    "tableColumnLabels": {
+        "Reason": "Raison:",
+        "URL": "L'adresse:",
+        "User IP": "Adresse IP utilisateur:"
+    },
+    "reasonReplacements": {
+        "Page identified as having malware, spyware, or phishing": "Page identifiée comme contenant des logiciels malveillants, des logiciels espions ou de l'hameçonnage",
+        "Page identified as blocked category": "Page identifiée comme catégorie bloquée"
+    },
+    "blockPageMessagesReplacements": {
+        "The content you requested is blocked by your organization's security policy":"Le contenu que vous avez demandé est bloqué par la politique de sécurité de votre organisation"
+    },
+    "titleReplacements": {
+        "Block If Virus Was Found":"Bloqué à cause d'un virus",
+        "Block due to DLP Policy hit":"Bloqué en raison d'un accès à la politique DLP"
+    }
+}

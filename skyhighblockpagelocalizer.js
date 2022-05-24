@@ -107,7 +107,7 @@ function getLangFileLocation(){
     // by default, the user of the script can specify a different location by adding a hidden <span> element with the link
     // in the original page, the span needs to have the id="langFileLoc" and location is read from prefix attribute e.g.
     // <span hidden prefix="https://cdn.jsdelivr.net/gh/EXAMPLE/blockpages@v1.0/langs"></span>
-    var loc = "https://cdn.jsdelivr.net/gh/zengelan/skyhighblockpagelocalizer@v1.0.0/languages_example/";
+    var loc = "https://cdn.jsdelivr.net/gh/zengelan/skyhighblockpagelocalizer/languages_example/";
     var locSpan = $("#langFilesLoc");
     if (locSpan != undefined && locSpan){
         // we found the span tag
