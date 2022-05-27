@@ -2,7 +2,6 @@
     "wellKnownSections": {
         "block-page-message": 0,
         "title": "dies hier ist der titel",
-        "logo": "<img id=\"logo\" #logo=\"\" src=\"https://www.skyhighsecurity.com/sse/en-us/img/logos/skyhigh_logo_grad.svg\">",
         "adminMessage": "<p>Pensez-vous que ce message est erroné? Veuillez contacter l' <a href=\"mailto:admin@beispiel.de\">admin</a></p>",
         "more-details-trigger": "Veuillez afficher plus de détails"
     },

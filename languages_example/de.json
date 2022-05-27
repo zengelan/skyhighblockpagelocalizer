@@ -2,9 +2,11 @@
     "wellKnownSections": {
         "block-page-message": 0,
         "title": "dies hier ist der titel",
-        "logo": "<img id=\"logo\" #logo=\"\" src=\"https://www.skyhighsecurity.com/sse/en-us/img/logos/skyhigh_logo_grad.svg\">",
+        "mainBlockLogo": "<img id=\"logo\" #logo=\"\" src=\"https://www.skyhighsecurity.com/sse/en-us/img/logos/skyhigh_logo_grad.svg\">",
+        "footerImage": "<img style=\"background-color:black\" id=\"logo\" #logo=\"\" src=\"https://www.mcafee.com/enterprise/en-us/img/trellix-skyhigh/trellix-skyhigh-logos.png\">",
         "adminMessage": "<p>Sind Sie der Meinung daß diese Meldung falsch ist? Kontaktieren sie bitte den <a href=\"mailto:admin@beispiel.de\">Admin</a></p>",
-        "more-details-trigger": "Bitte mehr Details anzeigen"
+        "more-details-trigger": "Bitte mehr Details anzeigen",
+        "favIcon": "https://www.skyhighsecurity.com/sse/en-us/img/logos/skyhigh_logo_grad.svg"
     },
     "tableColumnLabels": {
         "Reason": "Grund:",

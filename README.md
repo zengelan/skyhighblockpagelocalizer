@@ -48,5 +48,6 @@ the localization script will read the prefix for the language files then from th
 TODO:
 * Finish docs
 * Add more languages
+* fix "show more"
 
 Have a lot of fun

@@ -37,6 +37,20 @@ function getReplacement(orgString, replacementArray) {
     return result;
 }
 
+function setFooterImage(htmlContent) {
+    // find and change the well known footer image span content
+    var footerImageSpan = $("body > div > div.footer > span.footer-image");
+    console.debug("footerImageSpan:", footerImageSpan.html());
+    footerImageSpan.html(htmlContent);
+}
+
+function setMainBlockLogo(htmlContent) {
+    // find and change the well known #main_block_logo div content
+    var mainBlockLogoDiv = $("body > div > div.body-container > div.template-logo");
+    console.debug("mainBlockLogoDiv:", mainBlockLogoDiv.html());
+    mainBlockLogoDiv.html(htmlContent);
+}
+
 function changeTitle(newTitle) {
     // find and change the well known title
     var titleSpan = $("body > div > div.header > span.title");
@@ -102,6 +116,20 @@ function changeValueInRow(inRowAttr, newValue) {
     }
 }
 
+function setFavIcon(url){
+    // <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    try {
+        var favicon = document.createElement('link');
+        favicon.href = url;
+        favicon.type="image/png";
+        favicon.rel="icon";
+        document.getElementsByTagName('head')[0].appendChild(favicon);
+    } catch {
+        console.warn("Could not set favicon to " + url);
+    }
+}
+
+
 function getLangFileLocation(){
     // the lang file location is "https://cdn.jsdelivr.net/gh/zengelan/skyhighblockpagelocalizer@v1.0.0/languages_example/"
     // by default, the user of the script can specify a different location by adding a hidden <span> element with the link
@@ -113,7 +141,7 @@ function getLangFileLocation(){
         // we found the span tag
         var locAttr = locSpan.attr("data-loc");
         if (locAttr != undefined && locAttr){
-            if (locAttr.startsWith("http")){
+            if (locAttr.startsWith("http") || locAttr.startsWith("./")|| locAttr.startsWith("../")){
                 loc = locAttr;
             } 
         }
@@ -136,6 +164,12 @@ function loadLanguage(lang) {
                         changeTitle(v);
                     } else if (i === "adminMessage") {
                         changeAdminMessage(v);
+                    } else if (i === "favIcon") {
+                        setFavIcon(v);
+                    } else if (i === "footerImage") {
+                        setFooterImage(v);
+                    } else if (i === "mainBlockLogo") {
+                        setMainBlockLogo(v);
                     } else if (i === "more-details-trigger") {
                         changeMoreDetails(v);
                     } else {
@@ -146,9 +180,9 @@ function loadLanguage(lang) {
                             if (v != undefined && v) {
                                 console.debug("Found item with id", i, "changing to", v);
                                 item.html('\n' + v + '\n');
-                            } else {
-                                console.warn("Did not find wellKnownSections item named", i);
                             }
+                        } else {
+                            console.warn("Did not find wellKnownSections item named: ", i);
                         }
                     }
                 });
